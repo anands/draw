@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Draw - A freehand drawing board built on canvas</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Anand Sudhanaboina">
+    <meta name="description" content="Draw - A freehand drawing board built on canvas">
+    <link rel="canonical" href="http://draw.codehate.com/">
+    <link href="assets/images/favicon.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="options">
+        <button id="refresh" title="Refresh (clear) view"><i class="fa fa-lg fa-refresh"></i></button>
+        <div class="input-group">
+            <i class="fa  fa-paint-brush"></i>
+            <input class="jscolor" id="stroke-color" value="000000" title="Select brush color">
+        </div>
+        <button id="download" title="Download view"><i class="fa fa-lg fa-download"></i></button>
+        <button id="add-image" title="Add image to view"><i class="fa fa-lg fa-file-image-o"></i></button>
+        <div class="input-group">
+            <i class="fa fa-font"></i>
+            <input type="text" id="line-width" value="3" title="Change font size (in px)" />
+        </div>
+        <div class="input-group">
+            <i class="fa fa-desktop"></i>
+            <input class="jscolor" id="background-color" value="FFFFFF" title="Change background color" />
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div class="hide">
+        <input type="file" id="add-image-input">
+    </div>
+    <script src="assets/libs/jscolor.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#options {
+    background-color: #FCFCFC;
+    // min-height: 36px;
+}
+
+#options i {
+    color: #424242;
+}
+
+#options > button {
+    background: none;
+    border: none;
+    border-right: 1px solid #EEE;
+    height: 100%;
+    padding: 10px 12px;
+}
+
+#canvas {
+    border-top: 1px solid #EEEEEE;
+    border: 1px solid #EEE;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: -o-crisp-edges;
+    image-rendering: pixelated;
+}
+
+.input-group {
+    display: inline-block;
+    border-right: 1px solid #EEE;
+    vertical-align: top;
+    padding: 7px 5px;
+}
+
+.input-group input {
+    width: 60px;
+    margin-left: 5px;
+}
+
+#options button:hover,
+#options button:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
